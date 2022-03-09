@@ -9,15 +9,15 @@ boolean leftTurn = false;
 True - Left timer will run
 False - Right timer will run
 */
-int leftTime = 300; // Remaining time on the left
-int rightTime = 300; // Remaining time on the right
+int leftTime = 300; // Remaining time on the left side
+int rightTime = 300; // Remaining time on the right side
 int startTime = 0; // Seconds since spacebar pressed to change side
 boolean changingLeft = true; // Selecting time for left side (screen 1)
 boolean started = false; // Has timer been started (i.e. has spacebar been pressed)
 boolean flagged = false; // Has someone been flagged (i.e. has one of the times gone down to 0)
 
 void setup(){
-  size(800,600);
+  size(1600,1200);
 }
 
 void draw(){
@@ -42,7 +42,7 @@ void drawMenu(){
   text("Press any key to start.", width/2, 460);
   textSize(20);
   textAlign(LEFT);
-  text("Copyright © 2022 Ethan Xu under the MIT License", 20, 580);
+  text("Copyright © 2022 Ethan Xu's mom under the MIT License", 20, 580);
   textAlign(RIGHT);
   text("Version 2022.03.07", width-20, 580);
 }
